@@ -1,0 +1,38 @@
+@import "./_colors";
+
+header.header-news > div {
+    flex: 1 0 0;
+  }
+  
+  header.header-news {
+    & > button {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      color: rgba($black, .4);
+      cursor: pointer;
+      user-select: none;
+      transition: .5s;
+  
+      &:focus {
+        outline: none;
+      }
+  
+      &.last {
+        right: 0;
+      }
+  
+      &:hover {
+        color: $black;
+        background-color: rgba($white, .4); 
+      }
+    }
+    & > div.header-news__container {
+      display: flex;
+    }
+    position: relative;
+    min-height: 18rem;
+    display: flex;
+  }
